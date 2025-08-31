@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Home } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
+import MainApp from '../../components/mainApp';
 
 const LoginPage = ({ onViewChange }) => {
   const { login } = useAuth();
@@ -27,6 +28,7 @@ const LoginPage = ({ onViewChange }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-xl w-full max-w-md p-8">
+        <button onClick={() => onViewChange('main')}>Back</button>
         <div className="text-center mb-8">
           <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <Home className="w-8 h-8 text-white" />

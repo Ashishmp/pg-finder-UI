@@ -29,6 +29,7 @@ const RegisterPage = ({ onViewChange }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-emerald-100 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-xl w-full max-w-md p-8">
+        <button onClick={() => onViewChange('main')}>Back</button>
         <div className="text-center mb-8">
           <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <User className="w-8 h-8 text-white" />
